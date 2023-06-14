@@ -5,7 +5,7 @@ const app = express();
 
 console.log(__dirname);
 
-const assetsRouter = require("../back-end/assets-router");
+const assetsRouter = require("./back-end/assets-router");
 app.use("/src", assetsRouter);
 
 // app.get("/api/v1", (req, res) => {

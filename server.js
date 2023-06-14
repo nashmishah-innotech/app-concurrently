@@ -5,7 +5,7 @@ const app = express();
 
 console.log("Hello");
 
-const assetsRouter = require("../back-end/assets-router");
+const assetsRouter = require("./back-end/assets-router");
 app.use("/src", assetsRouter);
 
 app.use("/", express.static(path.join(__dirname, "public")));
